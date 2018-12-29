@@ -44,6 +44,7 @@ $(document).ready(function(){
 	var truebox = $("#true");
 	var actualbox = $("#actual");
 	var zubox = $("#zu");
+	var noblePCbox = $("#nobilisPC");
 
 	var characters = $(".character");
 	var gmdPCnames = $(".character.gmdpc");
@@ -56,11 +57,13 @@ $(document).ready(function(){
 	var singleselect = $(".blue1, .orange1, .green1, .red1, .gold1, .purple1, .silver1, .black1");
 	var deselect = $(".blue, .orange, .green, .red, .gold, .purple, .silver, .black");
 
-	var exposition = $("p");
+	var allexposition = $("p");
+	var menus = $("div#nobilismenu, div#excrucianmenu, div#campaignmenu, div#toolmenu");
 
 //hide characters on startup
 	characters.hide();
-	exposition.hide();
+	allexposition.hide();
+	menus.hide();
 
 	clear.on("click", function(){
 		$(".highlight").removeClass("highlight");
@@ -82,7 +85,7 @@ $(document).ready(function(){
 		$(".black1").removeClass("black1").addClass("black");
 		$(".black2").removeClass("black2").addClass("black");
 	  characters.hide();
-		exposition.hide();
+		allexposition.hide();
 	});
 
 	function rotateOut(e){
@@ -123,6 +126,22 @@ $(document).ready(function(){
 		if (e.hasClass("black")) {e.removeClass("black").addClass("black1");}
 	}
 
+	$(".nob").on("click", function(){
+		$("div#nobilismenu").toggle();
+	});
+
+	$(".exc").on("click", function(){
+		$("div#excrucianmenu").toggle();
+	});
+
+	$(".cam").on("click", function(){
+		$("div#campaignmenu").toggle();
+	});
+
+	$(".tool").on("click", function(){
+		$("div#toolmenu").toggle();
+	});
+
 	$("#intersect").on("click", function(){
 		intersections = $(".blue2, .orange2, .green2, .red2, .gold2, .purple2, .silver2, .black2");
 		intersections.find(".character:not('.gmdnpc')").show();
@@ -145,6 +164,23 @@ $(document).ready(function(){
 	$("#fulldeselect").on("click", function(){
 		deselect = $(".blue, .orange, .green, .red, .gold, .purple, .silver, .black");
 		deselect.find(".character").hide();
+	});
+
+	noblePCbox.on("click", function(){
+		if (noblePCbox.hasClass("pressed")){
+	   $(".attr").each(function(){
+			 rotateOut($(this));
+		 });
+	   noblePCbox.removeClass("pressed");
+		 $("p.noblePC").hide();
+	  }
+	  else {
+			$(".attr").each(function(){
+ 			 rotateIn($(this));
+ 		 	});
+		 	noblePCbox.addClass("pressed");
+			$("p.noblePC").show();
+	  }
 	});
 
 	deceitbox.on("click", function(){

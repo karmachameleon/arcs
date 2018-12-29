@@ -8,10 +8,48 @@ table{
   width: 60%;
 }
 
-/*td.highlight {
-  background-image: url("fullbgsolid.jpg"); /* You should tone down the opacity/contrast of this for the final thing?
-  background-blend-mode: soft-light;
-}*/
+button{
+  background: #adadad;
+  border-radius: 6px;
+  margin: 2px 1px;
+}
+
+button.menu {
+  background: #bbaadd;
+  font-size: 1.2em;
+}
+
+button.pressed{
+  background: #696969;
+  border-radius: 6px;
+}
+
+.darkbg { /*blue, red, purple, black*/
+  color: #8D8BA1;
+  text-decoration: none;
+}
+
+.lightbg {
+  color: #000000;
+  text-decoration: none;
+}
+
+.darkbg:hover{
+  color: #adadad;
+}
+
+.lightbg:hover{
+  color: #343434;
+}
+
+th{
+  padding: 7px;
+}
+
+th.highlight {
+  border: 4px solid;
+  padding: 3px;
+}
 
 #info {
   position: fixed;

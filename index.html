@@ -20,26 +20,30 @@
   </head>
   <body>
     <div id="info">
-      <div id="nobilis">
+      <button class="menu nob">Noble Factions</button>
+      <div id="nobilismenu">
           <button id="angel">Angels</button>
           <button id="devil">Fallen Angels</button>
-          <button id="serpent">Aaron's Serpents</button><br>
-          <button id="light">Magisters of the Light</button><br>
-          <button id="dark">Magisters of the Dark</button><br>
-          <button id="wild">Magisters of the Wild</button><br>
+          <button id="serpent">Aaron's Serpents</button>
+          <button id="light">Magisters of the Light</button>
+          <button id="dark">Magisters of the Dark</button>
+          <button id="wild">Magisters of the Wild</button>
           <button id="true">Divine Imperators/True Gods</button>
           <button id="actual">Actuals</button>
           <button id="zu">Zu</button>
+          <button id="nobilisPC">Powers</button>
       </div>
       <br>
-      <div id="excrucians">
+      <button class="menu exc">Excrucian Factions</button>
+      <div id="excrucianmenu">
           <button id="deceit">Deceiver</button>
           <button id="war">Warmain</button>
           <button id="strat">Strategist</button>
           <button id="mim">Mimic</button>
       </div>
       <br>
-      <div id="campaigns">
+      <button class="menu cam">Characters by Campaign</button>
+      <div id="campaignmenu">
           <button id="gmdPC">Glass-Maker's Dragon PCs</button><br>
           <button id="gmdNPC">GMD Miraculous NPCs</button><br>
           <button id="horizon">Horizon Core PCs</button><br>
@@ -47,17 +51,18 @@
           <button id="misc">Misc/Tumblr Errata (probably incomplete)</button>
       </div>
       <br>
-      <div id="tools">
+      <button class="menu tool">Tools</button>
+      <div id="toolmenu">
         <button id="intersect">Show characters in intersection</button>
         <button id="select">Show characters in selection</button>
         <button id="deselect">Hide characters outside intersection</button>
         <button id="fulldeselect">Hide characters outside selection</button>
       </div>
-      <br>
+      <br/>
       <span style="color:#adadad">HOW TO:<list>
           <li>Click a row/column heading to highlight that row/column.</li>
-          <li>Click again to un-highlight.</li>
-          <li>Click a campaign button to highlight those characters' arcs and show their names.</li>
+          <li>Click an arc name to view that arc on Jenna Moran's Tumblr.</li>
+          <li>Click a header or button again to un-highlight.</li>
           <li>Click "clear all" to reset everything.</li>
           <li>Let me know if something's not working right.</li>
         </list>
@@ -73,18 +78,18 @@
         </tr>
          <tr>
           <th class="blue header">Blue<br>Bindings</th>
-          <td class="immortal blue strategist angel misc">Gatekeeper
+          <td class="immortal blue strategist angel misc"><a class="darkbg" target="_blank" href="http://jennamoran.tumblr.com/tagged/gatekeeper/chrono">Gatekeeper</a>
             <div class="character misc">
             <br><b>Jade Irinka</b><br>Angel of the Houses of the Sun</div>
           </td>
-          <td class="frantic blue actual horI horII">Gatecrasher
+          <td class="frantic blue actual horI horII"><a class="darkbg" target="_blank" href="http://jennamoran.tumblr.com/post/128953930248/specialist">Gatecrasher</a>
             <div class="character horI">
             <br><b>Suzy Schwan</b><br>The Best Friend</div>
             <div class="character horII">
             <br><b>Laodemus Schwan</b><br>The Wish-Granting Engine</div>
           </td>
 
-          <td class="sickly blue mimic devil gmdpc gmdnpc">Wounded Angel
+          <td class="sickly blue mimic devil gmdpc gmdnpc"><a class="darkbg" target="_blank" href="http://jennamoran.tumblr.com/tagged/wounded-angel/chrono">Wounded Angel</a>
             <div class="character gmdpc">
             <br><b>Leonardo de Montreal</b><br>Nightmares' Angel</div>
             <div class="character gmdnpc">
@@ -101,11 +106,11 @@
         </tr>
          <tr>
           <th class="orange header">Orange<br>Knight</th>
-          <td class="immortal orange warmain devil wild serpent misc">Allegory
+          <td class="immortal orange warmain devil wild serpent misc"><a class="lightbg" target="_blank" href="http://jennamoran.tumblr.com/post/111335917433/allegory-complete">Allegory</a>
             <div class="character misc">
             <br><b>Leonardo de Montreal</b><br>Angel of Recovery</div>
           </td>
-          <td class="frantic orange actual gmdnpc gmdpc">Become Somebody
+          <td class="frantic orange actual gmdnpc gmdpc"><a class="lightbg" target="_blank" href="http://jennamoran.tumblr.com/tagged/become-somebody/chrono">Become Somebody</a>
             <div class="character gmdpc">
             <br><b>Seizhi Schwan</b><br>The Best Friend</div>
             <div class="character gmdnpc">
@@ -115,7 +120,7 @@
             <div class="character gmdnpc">
             <br><b>Nikolai Zakharov</b></div>
           </td>
-          <td class="sickly orange deceiver wild zu horI horII">Knave of Hearts
+          <td class="sickly orange deceiver attr wild zu horI horII"><a class="lightbg" target="_blank" href="http://jennamoran.tumblr.com/tagged/knave-of-hearts/chrono">Knave of Hearts</a>
             <div class="character horI">
             <br><b>Jasmine Apocynum</b><br>The Ideologue</div>
             <div class="character horII">
@@ -125,7 +130,7 @@
 
          <tr>
           <th class="green header">Green<br>Otherworldly</th>
-          <td class="immortal green serpent true gmdpc gmdnpc">Child of the Ash
+          <td class="immortal green serpent true gmdpc gmdnpc"><a class="lightbg" target="_blank" href="http://jennamoran.tumblr.com/tagged/child-of-the-ash/chrono">Child of the Ash</a>
             <div class="character gmdpc">
             <br><b>Chuubo</b><br>The Wishing Boy</div>
             <div class="character gmdpc">
@@ -144,7 +149,7 @@
             <br><b>Unicorn</b></div>
           </td>
 
-          <td class="frantic green dark gmdpc gmdnpc">Spiritual
+          <td class="frantic green dark attr gmdpc gmdnpc"><a class="lightbg" target="_blank" href="http://jennamoran.tumblr.com/post/167812668103/spiritual-redux">Spiritual</a>
             <div class="character gmdpc">
             <br><b>Rinley Yatskaya</b><br>The Troublemaker</div>
             <div class="character gmdnpc">
@@ -155,7 +160,7 @@
             <br><b>The Exultant</b></div>
           </td>
 
-          <td class="sickly green serpent true dark horI horII">Called Away
+          <td class="sickly green serpent true dark horI horII"><a class="lightbg" target="_blank" href="http://jennamoran.tumblr.com/post/107017590708/called-away-draft-as-a-single-post">Called Away</a>
             <div class="character horI">
             <br><b>Jasper Irinka</b><br>The Child of the Sun</div>
             <div class="character horII">
@@ -165,7 +170,7 @@
 
         <tr>
           <th class="red header">Red<br>Storyteller</th>
-          <td class="immortal red angel light devil zu gmdpc horII gmdnpc">Creature of the Light
+          <td class="immortal red angel light devil zu gmdpc horII gmdnpc"><a class="darkbg" target="_blank" href="http://jennamoran.tumblr.com/tagged/creature-of-the-light/chrono">Creature of the Light</a>
             <div class="character gmdpc">
             <br><b>Entropy II</b><br>The Angel of Fortitude</div>
             <div class="character horII">
@@ -180,7 +185,7 @@
             <br><b>Unicorn</b></div>
           </td>
 
-          <td class="frantic red warmain dark gmdpc horI gmdnpc">Creature of Fable
+          <td class="frantic red warmain dark gmdpc horI gmdnpc"><a class="darkbg" target="_blank" href="http://jennamoran.tumblr.com/tagged/creature-of-fable/chrono">Creature of Fable</a>
             <div class="character gmdpc">
             <br><b>Rinley Yatskaya</b><br>The Troublemaker</div>
             <div class="character horI">
@@ -197,26 +202,26 @@
             <br><b>The Graveyard Spirit<br>aka The Grief-Yard<br>aka Simon Aluskiy</b></div>
           </td>
 
-          <td class="sickly red mimic deceiver actual misc">Creature of Delirium
+          <td class="sickly red mimic deceiver actual misc"><a class="darkbg" target="_blank" href="http://jennamoran.tumblr.com/post/119713516038/alchemist-complete-draft">Creature of Delirium</a>
             <div class="character misc">
             <br><b>Jasmine Apocynum</b><br>The Ideologue</div>
           </td>
         </tr>
         <tr>
           <th class="gold header">Yellow<br>Aspect</th>
-            <td class="immortal gold angel zu misc">Chosen One
+            <td class="immortal gold angel zu misc"><a class="lightbg" target="_blank" href="http://jennamoran.tumblr.com/tagged/magical-hero/chrono">Chosen One</a>
             <div class="character misc">
             <br><b>Jade Irinka</b><br>Angel of the Houses of the Sun</div>
           </td>
 
-          <td class="frantic gold zu gmdpc gmdnpc">The Ace
+          <td class="frantic gold zu attr gmdpc gmdnpc"><a class="lightbg" target="_blank" href="http://jennamoran.tumblr.com/tagged/the-ace/chrono">The Ace</a>
             <div class="character gmdpc">
             <br><b>Natalia Koutolika</b><br>The Prodigy</div>
             <div class="character gmdnpc">
             <br><b>Melanie Malakh</b></div>
           </td>
 
-          <td class="sickly gold deceiver devil serpent gmdpc gmdnpc horI horII">Reality Syndrome
+          <td class="sickly gold deceiver devil serpent gmdpc gmdnpc horI horII"><a class="lightbg" target="_blank" href="http://jennamoran.tumblr.com/tagged/reality-syndrome/chrono">Reality Syndrome</a>
             <div class="character horI gmdpc">
             <br><b>Chuubo</b><br>The Wishing Boy</div>
             <div class="character gmdnpc">
@@ -236,7 +241,7 @@
         <tr>
           <th class="purple header">Purple<br>Shepherd</th>
 
-          <td class="immortal purple angel light gmdpc gmdnpc">A Keeper of Gardens
+          <td class="immortal purple angel light gmdpc gmdnpc"><a class="darkbg" target="_blank" href="http://jennamoran.tumblr.com/tagged/a-keeper-of-gardens/chrono">A Keeper of Gardens</a>
             <div class="character gmdpc">
             <br><b>Entropy II</b><br>The Angel of Fortitude</div>
             <div class="character gmdnpc">
@@ -253,7 +258,7 @@
             <br><b>Ugallu</b></div>
           </td>
 
-          <td class="frantic purple strategist gmdpc horII gmdnpc">Sentimental
+          <td class="frantic purple strategist attr gmdpc horII gmdnpc"><a class="darkbg" target="_blank" href="http://jennamoran.tumblr.com/tagged/sentimental/chrono">Sentimental</a>
             <div class="character gmdpc">
             <br><b>Miramie Mesmer</b><br>The Dream-Witch</div>
             <div class="character horII">
@@ -264,21 +269,22 @@
             <br><b>Melanie Malakh</b></div>
           </td>
 
-          <td class="sickly purple warmain light horI">Impresario
+          <td class="sickly purple warmain light horI"><a class="darkbg" target="_blank" href="http://jennamoran.tumblr.com/tagged/sickly-storyteller/chrono">Impresario</a>
             <div class="character horI">
             <br><b>Soun Shounen</b><br>The Idol</div>
           </td>
         </tr>
         <tr>
           <th class="silver header">Silver<br>Emptiness</th>
-          <td class="immortal silver warmain dark wild horII">Indomitable
+          <td class="immortal silver warmain dark wild horII"><a class="lightbg" target="_blank" href="http://jennamoran.tumblr.com/tagged/indomitable/chrono">Indomitable</a>
             <div class="character horII">
             <br><b>Mrs. Senko</b><br>The Practical Teacher</div>
           </td>
 
-          <td class="frantic silver mimic strategist mimic">Troubled</td>
+          <td class="frantic silver mimic strategist mimic"><a class="lightbg" target="_blank" href="http://jennamoran.tumblr.com/tagged/renegade/chrono">Troubled</a>
+            </td>
 
-          <td class="sickly silver strategist gmdpc horI gmdnpc">Accursed
+          <td class="sickly silver strategist gmdpc horI gmdnpc"><a class="lightbg" target="_blank" href="http://jennamoran.tumblr.com/tagged/sickly-silver/chrono">Accursed</a>
             <div class="character gmdpc">
             <br><b>Miramie Mesmer</b><br>The Dream-Witch</div>
             <div class="character horI">
@@ -302,7 +308,7 @@
         <tr>
           <th class="black header">Black<br>Mystic</th>
 
-          <td class="immortal black wild true gmdpc horII gmdnpc">Primordial
+          <td class="immortal black wild true gmdpc horII gmdnpc"><a class="darkbg" target="_blank" href="http://jennamoran.tumblr.com/tagged/primordial/chrono">Primordial</a>
             <div class="character gmdpc">
             <br><b>Jasper Irinka</b><br>The Child of the Sun</div>
             <div class="character horII">
@@ -321,11 +327,11 @@
             <br><b>Many-Voiced Minions</b></div>
           </td>
 
-          <td class="frantic black mimic horI">Prophet
+          <td class="frantic black mimic horI"><a class="darkbg" target="_blank" href="http://jennamoran.tumblr.com/tagged/prophet/chrono">Prophet</a>
             <div class="character horI">
             <br><b>Dulcinea de Montreal</b><br>The Rival</div>
           </td>
-          <td class="sickly black deceiver light true actual horII">Awakening
+          <td class="sickly black deceiver light true actual horII"><a class="darkbg" target="_blank" href="http://jennamoran.tumblr.com/tagged/awakening/chrono">Awakening</a>
             <div class="character horII">
             <br><b>Zoë Rosewood</b><br>Ogre-Sensei</div>
           </td>
@@ -335,49 +341,51 @@
 
     <div id="flavortext">
       <p class="nobilis exposition">Jenna Moran's previous work, Nobilis, describes the various categories of Imperators, gods with total dominion over the many aspects of reality. Each Nobilis faction is associated with a set of four Arcs.</p>
-      <p class="angel">Angels work tirelessly to spread grace, enlightenment, and beauty. The touch of Heaven is transformative, self-replicating, invasive, and difficult to bear. It can be salvation, it can elevate mortals to saints, but it can also be cold, inhuman justice. During the High War, angels were forced to fight hardest, as the favored Excrucian targets.</p>
-      <p class="angel">No living characters are officially classified as angels. Jade Irinka was; she's dead.</p>
-      <p class="devil">Some angels argued that Heaven's judgements were unfair, and that there was value in the things they rejected. For this they were cast out, and they dwell to this day in Hell as the devils. Their task is to cherish the unloved and bear witness to those who are utterly alone. They are twisted and jaded by their long association with monstrous, broken, and evil things, but their love is omnipresent and uncondiional.</p>
-      <p class="devil">Leonardo de Montreal is a fallen angel, although he usually doesn't know it. The mystery Hoop Snake, which is named Inexplicable, resembles a devil closely enough to count.</p>
-      <p class="serpent">The infinite worlds of the universe hang from an immense ash tree. Moses' brother Aaron threw down his wooden staff before Pharoah's magicians, and it became a snake. The Aaron's Serpents are divinities born from the substance of the World Ash. They are enormous and immensely strong; they are also pacifists, with little ambition beyond enjoying the wonders of Creation.</p>
-      <p class="serpent">Chuubo is a Serpent who has taken human form, possibly because enjoying a good ice cream cone is easier with hands. Typhon, which is named Outrage, takes the form of a giant golden snake. The currently unnamed Antiquarian, a tendril of the beast Sa'a Lingurth puppeteering a human body, is at least superficially snakelike.</p>
-      <p class="light">The Light is a dream of the best that humanity can be. Magisters of this creed uphold ideals without truly seeing the crudeness and imperfections of reality.</p>
-      <p class="light">Entropy II is a Magister of the Light. He has a bad habit of not really looking at whoever he's talking to, instead staring directly at bright lights or up into the sun.</p>
-      <p class="dark">The Dark is a wild, reckless expression of everything that tempts humanity. Magisters of this creed are chaotic, unpredictable tricksters who hate boundaries and restrictions.</p>
-      <p class="dark">Rinley Yatskaya is born of human parents but classified with the Magisters of the Dark. John Wicked is another but I haven't met him yet.</p>
-      <p class="dark">According to recent posts Dr. Moran has considered swapping Spiritual for Prophet on the Dark Magister list, but I've left things where they are for now.</p>
-      <p class="wild">Magisters of the Wild arise from nothing and impose their own personal laws onto the world around them. The Wild is ultimately introspection - understanding oneself and refusing to let anything else define you.</p>
-      <p class="wild">Zoë Rosewood, King Death, and the Witch of the Far Roofs are all aligned with the Wild.</p>
-      <p class="true">Divine Imperators or True Gods are fundamental, primordial, ancient divinities, a great seething interwoven mass bound up with each other and with the world. They predate the other factions and every other form of life.</p>
-      <p class="true">Jasper Irinka, though the daughter of an Angel and an Excrucian Warmain, manifests her powers more like a True God than anything else.</p>
-      <p class="actual">If Creation is the words of a sentence, Actuals are the grammar; they are the rules that give reality structure. Paradoxes caused by impossible miracles may pull an Actual into reality to fill the gap, and though they may not intend malice these stranded Actuals are highly dangerous. Their alienness is infectious; when they try to understand their unfamiliar surroundings they fail, as everything they touch or examine is converted into more of themself.</p>
-      <p class="actual">Town is more forgiving a setting, however, and Seizhi and Laodemus Schwan might well find happiness; perhaps even local bully Billy Sovereign can be salvaged.</p>
-      <p class="zu">The Zu are an isolated order of martial artists who have trained past the bounds of mortality. They live on a remote mountain range shielded against the strongest powers of divinity and the void both.</p>
-      <p class="zu">Natalia Koutolika is probably closest to being Zu, if anyone is. Soun Shounen might be aligned in that direction as well.</p>
+      <p class="angel exposition">Angels work tirelessly to spread grace, enlightenment, and beauty. The touch of Heaven is transformative, self-replicating, invasive, and difficult to bear. It can be salvation, it can elevate mortals to saints, but it can also be cold, inhuman justice. During the High War, angels were forced to fight hardest, as the favored Excrucian targets.</p>
+      <p class="angel whoswho">No living characters are officially classified as angels. Jade Irinka was; she's dead.</p>
+      <p class="devil exposition">Some angels argued that Heaven's judgements were unfair, and that there was value in the things they rejected. For this they were cast out, and they dwell to this day in Hell as the devils. Their task is to cherish the unloved and bear witness to those who are utterly alone. They are twisted and jaded by their long association with monstrous, broken, and evil things, but their love is omnipresent and uncondiional.</p>
+      <p class="devil whoswho">Leonardo de Montreal is a fallen angel, although he usually doesn't know it. The mystery Hoop Snake, which is named Inexplicable, resembles a devil closely enough to count.</p>
+      <p class="serpent exposition">The infinite worlds of the universe hang from an immense ash tree. Moses' brother Aaron threw down his wooden staff before Pharoah's magicians, and it became a snake. The Aaron's Serpents are divinities born from the substance of the World Ash. They are enormous and immensely strong; they are also pacifists, with little ambition beyond enjoying the wonders of Creation.</p>
+      <p class="serpent whoswho">Chuubo is a Serpent who has taken human form, possibly because enjoying a good ice cream cone is easier with hands. Typhon, which is named Outrage, takes the form of a giant golden snake. The currently unnamed Antiquarian, a tendril of the beast Sa'a Lingurth puppeteering a human body, is at least superficially snakelike.</p>
+      <p class="light exposition">The Light is a dream of the best that humanity can be. Magisters of this creed uphold ideals without truly seeing the crudeness and imperfections of reality.</p>
+      <p class="light whoswho">Entropy II is a Magister of the Light. He has a bad habit of not really looking at whoever he's talking to, instead staring directly at bright lights or up into the sun.</p>
+      <p class="dark exposition">The Dark is a wild, reckless expression of everything that tempts humanity. Magisters of this creed are chaotic, unpredictable tricksters who hate boundaries and restrictions.</p>
+      <p class="dark whoswho">Rinley Yatskaya is born of human parents but classified with the Magisters of the Dark. John Wicked is another but I haven't met him yet.</p>
+      <p class="dark errata">According to recent posts Dr. Moran has considered swapping Spiritual for Prophet on the Dark Magister list, but I've left things where they are for now.</p>
+      <p class="wild exposition">Magisters of the Wild arise from nothing and impose their own personal laws onto the world around them. The Wild is ultimately introspection - understanding oneself and refusing to let anything else define you.</p>
+      <p class="wild whoswho">Zoë Rosewood, King Death, and the Witch of the Far Roofs are all aligned with the Wild.</p>
+      <p class="true exposition">Divine Imperators or True Gods are fundamental, primordial, ancient divinities, a great seething interwoven mass bound up with each other and with the world. They predate the other factions and every other form of life.</p>
+      <p class="true whoswho">Jasper Irinka, though the daughter of an Angel and an Excrucian Warmain, manifests her powers more like a True God than anything else.</p>
+      <p class="actual exposition">If Creation is the words of a sentence, Actuals are the grammar; they are the rules that give reality structure. Paradoxes caused by impossible miracles may pull an Actual into reality to fill the gap, and though they may not intend malice these stranded Actuals are highly dangerous. Their alienness is infectious; when they try to understand their unfamiliar surroundings they fail, as everything they touch or examine is converted into more of themself.</p>
+      <p class="actual whoswho">Town is more forgiving a setting, however, and Seizhi and Laodemus Schwan might well find happiness; perhaps even local bully Billy Sovereign can be salvaged.</p>
+      <p class="zu exposition">The Zu are an isolated order of martial artists who have trained past the bounds of mortality. They live on a remote mountain range shielded against the strongest powers of divinity and the void both.</p>
+      <p class="zu whoswho">Natalia Koutolika is probably closest to being Zu, if anyone is. Soun Shounen might be aligned in that direction as well.</p>
+      <p class="noblePC exposition">The player characters of a Nobilis campaign are Powers - lesser gods elevated from their mortal origins to serve a particular Imperator, who gifts them power over a single Estate. Multiple Powers serving the same divinity make up a Familia.</p>
+      <p class="noblePC whoswho">A Nobilis PC can be approximately converted to the CMWGE system by representing its attributes as Arcs: Aspect = The Ace, Domain = Spiritual, Persona = Knave of Hearts, Treasure = Sentimental.</p>
 
       <p class="excrucian exposition">Imperators fought a war against the Excrucians, beings who dwell outside conventional reality. They often appear human, at least to us, but their eye sockets are empty holes showing a starry night sky. In their view, Creation is an affront and an insult to the purity of the void they dwell in.</p>
-      <p class="deceiver">Deceivers believe the world is a lie and a cage, holding its hapless inhabitants back from truth. They manipulate 'false' reality to their own purposes. They often claim to love the people 'trapped' in reality, but whatever it is about us they love, it is something we would not recognize as ourselves.</p>
-      <p class="deceiver">Jasmine Apocynum is a young Deceiver who had an epiphany about the nature of truth during a dodgeball game. Iolithae Septimian arose during humanity's Bronze Age. Genseric Dace helped Jenna Moran write the Nobilis rulebook, although she complains it's hard to trust anything he says.</p>
-      <p class="warmain">Warmains wish to test the world and preserve the best of it. Their tests are usually brutal, and they do not accept refusal from their targets. Those who fail are generally left alone, which is cold comfort when 'failure' means breaking under the Warmain's torment. Those who survive are 'tempered,' utterly wiped out of reality. Warmains honor their favorite opponents by shedding their previous forms and adopting the faces and mannerisms of those worthy victims.</p>
-      <p class="warmain">The Headmaster of the Bleak Academy is a Warmain, although he doesn't conform to the standard arcs. His daughter Mrs. Senko teaches at Town's rival institution, Principal Entropy's school. Orderic Neustry is a hunter who preys on unlucky travellers Outside.</p>
-      <p class="strategist">Strategists are fundamentally inimical to reality. They labor under a strict time limit, because they are each dying of their individual weakness the moment they set foot in our world. They compensate with elaborate schemes and strategems, and with the World-Breaker's Hand, a technique which allows them to destroy <i>anything.</i></p>
+      <p class="deceiver exposition">Deceivers believe the world is a lie and a cage, holding its hapless inhabitants back from truth. They manipulate 'false' reality to their own purposes. They often claim to love the people 'trapped' in reality, but whatever it is about us they love, it is something we would not recognize as ourselves.</p>
+      <p class="deceiver whoswho">Jasmine Apocynum is a young Deceiver who had an epiphany about the nature of truth during a dodgeball game. Iolithae Septimian arose during humanity's Bronze Age. Genseric Dace helped Jenna Moran write the Nobilis rulebook, although she complains it's hard to trust anything he says.</p>
+      <p class="warmain exposition">Warmains wish to test the world and preserve the best of it. Their tests are usually brutal, and they do not accept refusal from their targets. Those who fail are generally left alone, which is cold comfort when 'failure' means breaking under the Warmain's torment. Those who survive are 'tempered,' utterly wiped out of reality. Warmains honor their favorite opponents by shedding their previous forms and adopting the faces and mannerisms of those worthy victims.</p>
+      <p class="warmain whoswho">The Headmaster of the Bleak Academy is a Warmain, although he doesn't conform to the standard arcs. His daughter Mrs. Senko teaches at Town's rival institution, Principal Entropy's school. Orderic Neustry is a hunter who preys on unlucky travellers Outside.</p>
+      <p class="strategist exposition">Strategists are fundamentally inimical to reality. They labor under a strict time limit, because they are each dying of their individual weakness the moment they set foot in our world. They compensate with elaborate schemes and strategems, and with the World-Breaker's Hand, a technique which allows them to destroy <i>anything.</i></p>
       <p class="strategist">Miramie Mesmer is all that remains of Strategist Melanie Malakh, who attempted to destroy Town but shattered into pieces instead.</p>
-      <p class="mimic">Mimics are the result when a dead Imperator is resurrected by Excrucian techniques. They are outwardly indistinguishable from the genuine godly article, but the inner core is imperfectly patched together. If revealed, the blasphemy they carry is released to wreak destruction; if not revealed, they operate as agents and spies against Creation.</p>
-      <p class="mimic">Leonardo de Montreal studied at the Bleak Academy, an Excrucian institution, and the thing that came back was a Mimic.</p>
-      <p class="mimic">The latest batch of Arc assignments gave Mimics Gatekeeper rather than Prophet, but more recent posts about the development of the Horizon campaign have indicated that Prophet is likely going to replace it.</p>
+      <p class="mimic exposition">Mimics are the result when a dead Imperator is resurrected by Excrucian techniques. They are outwardly indistinguishable from the genuine godly article, but the inner core is imperfectly patched together. If revealed, the blasphemy they carry is released to wreak destruction; if not revealed, they operate as agents and spies against Creation.</p>
+      <p class="mimic whoswho">Leonardo de Montreal studied at the Bleak Academy, an Excrucian institution, and the thing that came back was a Mimic.</p>
+      <p class="mimic errata">The latest batch of Arc assignments gave Mimics Gatekeeper rather than Prophet, but more recent posts about the development of the Horizon campaign have indicated that Prophet is likely going to replace it.</p>
 
-      <p class="gmd">Once upon a time, a witch and a glass-maker made a dragon out of glass and taught it to hate the world. It raged and it would have destroyed everything; only, it shattered, instead.
+      <p class="gmd exposition">Once upon a time, a witch and a glass-maker made a dragon out of glass and taught it to hate the world. It raged and it would have destroyed everything; only, it shattered, instead.
 <br>Maybe it found some reason to love the world.<br>
 Maybe their hearts weren’t really in it—not the glass-maker’s, not the witch’s.<br>
 Maybe it was just that the dragon was made of glass.</p>
       <p class="gmdNPC"></p>
       <p class="horizon">The Horizon campaign is still in early development.</p>
-      <p class="horizon">For people who only have access to the 12 core arcs, Dr. Moran suggests the following substitutions:<br>The Best Friend - Wounded Angel<br>The Prodigy - Become Somebody<br>The Child of the Sun - Spiritual (Element: Hope)<br>The Ideologue - Creature of the Light<br>The Rival - Primordial</p>
+      <p class="horizon errata">For people who only have access to the 12 core arcs, Dr. Moran suggests the following substitutions:<br>The Best Friend - Wounded Angel<br>The Prodigy - Become Somebody<br>The Child of the Sun - Spiritual (Element: Hope)<br>The Ideologue - Creature of the Light<br>The Rival - Primordial</p>
       <p class="horizonII">The Horizon campaign is still in early development.</p>
-      <p class="horizonII">Mrs. Rosewood might be on Awakening or might be on Primordial. Probably not both?</p>
-      <p class="misc">Jade Irinka hasn't got official stats as such, but Chosen One and Gatekeeper are both noted as made for her use.<br>The Angel of Recovery is an alternate Leonardo build, built to help clarify the function of Allegory, suited for a potential future project, the Age of Innocence, where the Sun never died and most of the tragedies in Town's history were averted or never happened.<br>Creature of Delirium lines up with Jasmine's established powers and it was briefly considered for the Horizon campaign but she hasn't formally been associated with it yet.</p>
+      <p class="horizonII errata">Mrs. Rosewood might be on Awakening or might be on Primordial. Probably not both?</p>
+      <p class="misc whoswho">Jade Irinka hasn't got official stats as such, but Chosen One and Gatekeeper are both noted as made for her use.<br>The Angel of Recovery is an alternate Leonardo build, built to help clarify the function of Allegory, suited for a potential future project, the Age of Innocence, where the Sun never died and most of the tragedies in Town's history were averted or never happened.<br>Creature of Delirium lines up with Jasmine's established powers and it was briefly considered for the Horizon campaign but she hasn't formally been associated with it yet.</p>
 
-      <br>Trait/color positioning and Nobilis faction sets taken from Jenna Moran's 2/15/2017 "Mid-February Thoughts on Arc Assignments" blog post unless noted.
+      <br>Trait/color positioning and Nobilis faction sets taken from Jenna Moran's 2/15/2017 <a href="http://jennamoran.tumblr.com/post/157297311243/mid-february-thoughts-on-arc-assignments">"Mid-February Thoughts on Arc Assignments"</a> blog post unless noted.
     </div>
   </body>
 </html>
