@@ -15,17 +15,17 @@ button{
 }
 
 button.menu {
-  background: #bbaadd;
+  background: #dcc6e0;
   font-size: 1.2em;
 }
 
 button.pressed{
-  background: #696969;
+  background: #888888;
   border-radius: 6px;
 }
 
 .darkbg { /*blue, red, purple, black*/
-  color: #8D8BA1;
+  color: #d3d3d3;
   text-decoration: none;
 }
 
@@ -35,11 +35,11 @@ button.pressed{
 }
 
 .darkbg:hover{
-  color: #adadad;
+  color: #b2cce5;
 }
 
 .lightbg:hover{
-  color: #343434;
+  color: #34385e;
 }
 
 th{
@@ -66,10 +66,6 @@ th.highlight {
   margin-top: 10px;
 }
 
-.pressed{}
-
-.character{}
-
 .header {
   background-color: #696969;
 }
@@ -83,32 +79,32 @@ td{
 }
 
 .blue {
-  color: #8D8BA1;
-  background-color: #121866;
+  color: #aaaaaa;
+  background-color: #0B1675;
   padding: 7px;
 }
 .blue1{
-  color: #adadad;
-  background-color: #073096;
+  color: #aaaaaa;
+  background-color: #1C3696;
   border: 3px solid;
   padding: 4px;
 }
 .blue2{
-  color: #adadad;
-  background-color: #1551A5;
+  color: #aaaaaa;
+  background-color: #1F50A5;
   border: 6px double;
 }
 .orange {
-  background-color: #B7381E;
+  background-color: #DA6E21;
   padding: 7px;
 }
 .orange1 {
-  background-color: #E05929;
+  background-color: #DA853A;
   border: 3px solid;
   padding: 4px;
 }
 .orange2 {
-  background-color: #E0683C;
+  background-color: #E09834;
   border: 6px double;
 }
 .green {
@@ -125,19 +121,19 @@ td{
   border: 6px double;
 }
 .red {
-  color: #8D8BA1;
+  color: #aaaaaa;
   background-color: #6B0200;
   padding: 7px;
 }
 .red1 {
-  color: #adadad;
+  color: #aaaaaa;
   background-color: #911411;
   border: 3px solid;
   padding: 4px;
 }
 .red2 {
-  color: #adadad;
-  background-color: #B0232A;
+  color: #aaaaaa;
+  background-color: #B03E43;
   border: 6px double;
 }
 .gold {
@@ -150,22 +146,22 @@ td{
   padding: 4px;
 }
 .gold2 {
-  background-color: #FFD83E;
+  background-color: #FFE261;
   border: 6px double;
 }
 .purple {
-  color: #8D8BA1;
+  color: #aaaaaa;
   background-color: #540B75;
   padding: 7px;
 }
 .purple1 {
-  color: #adadad;
+  color: #aaaaaa;
   background-color: #5C2182;
   border: 3px solid;
   padding: 4px;
 }
 .purple2 {
-  color: #adadad;
+  color: #aaaaaa;
   background-color: #782C91;
   border: 6px double;
 }
@@ -181,33 +177,32 @@ td{
 .silver2 {
   background-color: #8D8BA1;
   border: 6px double;
-  border: 3px solid;
   padding: 4px;
 }
 .black{
   background-color: #201C35;
-  color: #8D8BA1;
+  color: #aaaaaa;
   padding: 7px;
 }
 .black1{
   background-color: #26263B;
-  color: #8D8BA1;
+  color: #aaaaaa;
   border: 3px solid;
   padding: 4px;
 }
 .black2{
   background-color: #313143;
-  color: #8D8BA1;
+  color: #aaaaaa;
   border: 6px double;
 }
 
 
 .immortal {
-  border-color: white;
+  border-color: #fffacd;
 }
 
 .frantic{
-  border-color: gray;
+  border-color: #aab7b7;
 }
 
 .sickly {
