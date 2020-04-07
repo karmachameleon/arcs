@@ -60,10 +60,11 @@ $(document).ready(function(){
 	var allexposition = $("p");
 	var menus = $("div#nobilismenu, div#excrucianmenu, div#campaignmenu, div#toolmenu");
 
-//hide characters on startup
+//hide characters on startup; default to showing CMWGE names
 	characters.hide();
 	allexposition.hide();
 	menus.hide();
+	$(".attrName").hide();
 
 	clear.on("click", function(){
 		$(".highlight").removeClass("highlight");
@@ -140,6 +141,12 @@ $(document).ready(function(){
 
 	$(".tool").on("click", function(){
 		$("div#toolmenu").toggle();
+	});
+
+	$("#glitchtoggle").on("click", function(){
+		$(".attrName").toggle();
+		$(".arcName").toggle();
+    $(this).text($(this).text() == 'Toggle Names: Arcs (CMWGE)' ? 'Toggle Names: Attributes (Glitch)' : 'Toggle Names: Arcs (CMWGE)');
 	});
 
 	$("#intersect").on("click", function(){
