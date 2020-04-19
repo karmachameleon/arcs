@@ -53,10 +53,6 @@ $(document).ready(function(){
 	var hzIInames = $(".character.horII");
 	var miscnames = $(".character.misc");
 
-	var intersections = $(".blue2, .orange2, .green2, .red2, .gold2, .purple2, .silver2, .black2");
-	var singleselect = $(".blue1, .orange1, .green1, .red1, .gold1, .purple1, .silver1, .black1");
-	var deselect = $(".blue, .orange, .green, .red, .gold, .purple, .silver, .black");
-
 	var allexposition = $("p");
 	var menus = $("div#nobilismenu, div#excrucianmenu, div#campaignmenu, div#toolmenu");
 
@@ -68,63 +64,33 @@ $(document).ready(function(){
 
 	clear.on("click", function(){
 		$(".highlight").removeClass("highlight");
-	  $(".pressed").removeClass("pressed");
-		$(".blue1").removeClass("blue1").addClass("blue");
-		$(".blue2").removeClass("blue2").addClass("blue");
-		$(".orange1").removeClass("orange1").addClass("orange");
-		$(".orange2").removeClass("orange2").addClass("orange");
-		$(".green1").removeClass("green1").addClass("green");
-		$(".green2").removeClass("green2").addClass("green");
-		$(".red1").removeClass("red1").addClass("red");
-		$(".red2").removeClass("red2").addClass("red");
-		$(".gold1").removeClass("gold1").addClass("gold");
-		$(".gold2").removeClass("gold2").addClass("gold");
-		$(".purple1").removeClass("purple1").addClass("purple");
-		$(".purple2").removeClass("purple2").addClass("purple");
-		$(".silver1").removeClass("silver1").addClass("silver");
-		$(".silver2").removeClass("silver2").addClass("silver");
-		$(".black1").removeClass("black1").addClass("black");
-		$(".black2").removeClass("black2").addClass("black");
-	  characters.hide();
+		$(".pressed").removeClass("pressed");
+
+		$(".highlighted1").data('highlighted', 0).removeClass('highlighted1 highlighted2 highlighted3 highlighted4');
+		characters.hide();
 		allexposition.hide();
 	});
 
 	function rotateOut(e){
-		if (e.hasClass("blue1")) e.removeClass("blue1").addClass("blue");
-		if (e.hasClass("blue2")) e.removeClass("blue2").addClass("blue1");
-		if (e.hasClass("orange1")) e.removeClass("orange1").addClass("orange");
-		if (e.hasClass("orange2")) e.removeClass("orange2").addClass("orange1");
-		if (e.hasClass("green1")) e.removeClass("green1").addClass("green");
-		if (e.hasClass("green2")) e.removeClass("green2").addClass("green1");
-		if (e.hasClass("red1")) e.removeClass("red1").addClass("red");
-		if (e.hasClass("red2")) e.removeClass("red2").addClass("red1");
-		if (e.hasClass("gold1")) e.removeClass("gold1").addClass("gold");
-		if (e.hasClass("gold2")) e.removeClass("gold2").addClass("gold1");
-		if (e.hasClass("purple1")) e.removeClass("purple1").addClass("purple");
-		if (e.hasClass("purple2")) e.removeClass("purple2").addClass("purple1");
-		if (e.hasClass("silver1")) e.removeClass("silver1").addClass("silver");
-		if (e.hasClass("silver2")) e.removeClass("silver2").addClass("silver1");
-		if (e.hasClass("black1")) e.removeClass("black1").addClass("black");
-		if (e.hasClass("black2")) e.removeClass("black2").addClass("black1");
+		let highlighted = e.data('highlighted') || 0;
+		highlighted -= 1;
+		e.data('highlighted', highlighted);
+
+		highlighted < 1 && e.removeClass('highlighted1');
+		highlighted < 2 && e.removeClass('highlighted2');
+		highlighted < 3 && e.removeClass('highlighted3');
+		highlighted < 4 && e.removeClass('highlighted4');
 	}
 
 	function rotateIn(e){
-		if (e.hasClass("blue1")) {e.removeClass("blue1").addClass("blue2");}
-		if (e.hasClass("blue")) e.removeClass("blue").addClass("blue1");
-		if (e.hasClass("orange1")) e.removeClass("orange1").addClass("orange2");
-		if (e.hasClass("orange")) e.removeClass("orange").addClass("orange1");
-		if (e.hasClass("green1")) e.removeClass("green1").addClass("green2");
-		if (e.hasClass("green")) e.removeClass("green").addClass("green1");
-		if (e.hasClass("red1")) {e.removeClass("red1").addClass("red2");}
-		if (e.hasClass("red")) {e.removeClass("red").addClass("red1");}
-		if (e.hasClass("gold1")) {e.removeClass("gold1").addClass("gold2");}
-		if (e.hasClass("gold")) {e.removeClass("gold").addClass("gold1");}
-		if (e.hasClass("purple1")) e.removeClass("purple1").addClass("purple2");
-		if (e.hasClass("purple")) e.removeClass("purple").addClass("purple1");
-		if (e.hasClass("silver1")) e.removeClass("silver1").addClass("silver2");
-		if (e.hasClass("silver")) e.removeClass("silver").addClass("silver1");
-		if (e.hasClass("black1")) {e.removeClass("black1").addClass("black2");}
-		if (e.hasClass("black")) {e.removeClass("black").addClass("black1");}
+		let highlighted = e.data('highlighted') || 0;
+		highlighted += 1;
+		e.data('highlighted', highlighted);
+
+		highlighted >= 1 && e.addClass('highlighted1');
+		highlighted >= 2 && e.addClass('highlighted2');
+		highlighted >= 3 && e.addClass('highlighted3');
+		highlighted >= 4 && e.addClass('highlighted4');
 	}
 
 	$(".nob").on("click", function(){
@@ -150,27 +116,21 @@ $(document).ready(function(){
 	});
 
 	$("#intersect").on("click", function(){
-		intersections = $(".blue2, .orange2, .green2, .red2, .gold2, .purple2, .silver2, .black2");
-		intersections.find(".character:not('.gmdnpc')").show();
+		$(".highlighted2").find(".character:not(.gmdnpc)").show();
 	});
 
 	$("#select").on("click", function(){
-		intersections = $(".blue2, .orange2, .green2, .red2, .gold2, .purple2, .silver2, .black2");
-		singleselect = $(".blue1, .orange1, .green1, .red1, .gold1, .purple1, .silver1, .black1");
-		intersections.find(".character:not('.gmdnpc')").show();
-		singleselect.find(".character:not('.gmdnpc')").show();
+		$(".highlighted1").find(".character:not(.gmdnpc)").show();
 	});
 
 	$("#deselect").on("click", function(){
-		singleselect = $(".blue1, .orange1, .green1, .red1, .gold1, .purple1, .silver1, .black1");
-		deselect = $(".blue, .orange, .green, .red, .gold, .purple, .silver, .black");
-		singleselect.find(".character").hide();
-		deselect.find(".character").hide();
+		let deselect = $(".blue, .orange, .green, .red, .gold, .purple, .silver, .black");
+		deselect.not(".highlighted2").find(".character").hide();
 	});
 
 	$("#fulldeselect").on("click", function(){
-		deselect = $(".blue, .orange, .green, .red, .gold, .purple, .silver, .black");
-		deselect.find(".character").hide();
+		let deselect = $(".blue, .orange, .green, .red, .gold, .purple, .silver, .black");
+		deselect.not(".highlighted1").find(".character").hide();
 	});
 
 	noblePCbox.on("click", function(){
@@ -560,97 +520,81 @@ $(document).ready(function(){
 
 	bluehead.on("click", function(){
 		if (bluehead.hasClass("highlight")) {
-			$(".blue1").removeClass("blue1").addClass("blue");
-			$(".blue2").removeClass("blue2").addClass("blue1");
+			$(".blue").each(function() { rotateOut($(this)) });
 			bluehead.removeClass("highlight");
 		}
 	  else {
-			$(".blue1").removeClass("blue1").addClass("blue2");
-			$(".blue").removeClass("blue").addClass("blue1");
+			$(".blue").each(function() { rotateIn($(this)) });
 			bluehead.addClass("highlight");
 		}
 	});
 	orahead.on("click", function(){
 		if (orahead.hasClass("highlight")) {
-			$(".orange1").removeClass("orange1").addClass("orange");
-			$(".orange2").removeClass("orange2").addClass("orange1");
+			$(".orange").each(function() { rotateOut($(this)) });
 			orahead.removeClass("highlight");
 		}
 	  else {
-			$(".orange1").removeClass("orange1").addClass("orange2");
-			$(".orange").removeClass("orange").addClass("orange1");
+			$(".orange").each(function() { rotateIn($(this)) });
 			orahead.addClass("highlight");
 		}
 	});
 	grehead.on("click", function(){
 		if (grehead.hasClass("highlight")) {
-			$(".green1").removeClass("green1").addClass("green");
-			$(".green2").removeClass("green2").addClass("green1");
+			$(".green").each(function() { rotateOut($(this)) });
 			grehead.removeClass("highlight");
 		}
 	  else {
-			$(".green1").removeClass("green1").addClass("green2");
-			$(".green").removeClass("green").addClass("green1");
+			$(".green").each(function() { rotateIn($(this)) });
 			grehead.addClass("highlight");
 		}
 	});
 	redhead.on("click", function(){
 		if (redhead.hasClass("highlight")) {
-			$(".red1").removeClass("red1").addClass("red");
-			$(".red2").removeClass("red2").addClass("red1");
+			$(".red").each(function() { rotateOut($(this)) });
 			redhead.removeClass("highlight");
 		}
 		else {
-			$(".red1").removeClass("red1").addClass("red2");
-			$(".red").removeClass("red").addClass("red1");
+			$(".red").each(function() { rotateIn($(this)) });
 			redhead.addClass("highlight");
 		}
 	});
 	goldhead.on("click", function(){
 		if (goldhead.hasClass("highlight")) {
-			$(".gold1").removeClass("gold1").addClass("gold");
-			$(".gold2").removeClass("gold2").addClass("gold1");
+			$(".gold").each(function() { rotateOut($(this)) });
 			goldhead.removeClass("highlight");
 		}
 		else {
-			$(".gold1").removeClass("gold1").addClass("gold2");
-			$(".gold").removeClass("gold").addClass("gold1");
+			$(".gold").each(function() { rotateIn($(this)) });
 			goldhead.addClass("highlight");
 		}
 	});
 	purphead.on("click", function(){
 		if (purphead.hasClass("highlight")) {
-			$(".purple1").removeClass("purple1").addClass("purple");
-			$(".purple2").removeClass("purple2").addClass("purple1");
+			$(".purple").each(function() { rotateOut($(this)) });
 			purphead.removeClass("highlight");
 		}
 		else {
-			$(".purple1").removeClass("purple1").addClass("purple2");
-			$(".purple").removeClass("purple").addClass("purple1");
+			$(".purple").each(function() { rotateIn($(this)) });
 			purphead.addClass("highlight");
 		}
 	});
 	silhead.on("click", function(){
 		if (silhead.hasClass("highlight")) {
-			$(".silver1").removeClass("silver1").addClass("silver");
-			$(".silver2").removeClass("silver2").addClass("silver1");
+			$(".silver").each(function() { rotateOut($(this)) });
 			silhead.removeClass("highlight");
 		}
 		else {
-			$(".silver1").removeClass("silver1").addClass("silver2");
-			$(".silver").removeClass("silver").addClass("silver1");
+			$(".silver").each(function() { rotateIn($(this)) });
 			silhead.addClass("highlight");
 		}
 	});
 	blkhead.on("click", function(){
 		if (blkhead.hasClass("highlight")) {
-			$(".black1").removeClass("black1").addClass("black");
-			$(".black2").removeClass("black2").addClass("black1");
+			$(".black").each(function() { rotateOut($(this)) });
 			blkhead.removeClass("highlight");
 		}
 		else {
-			$(".black1").removeClass("black1").addClass("black2");
-			$(".black").removeClass("black").addClass("black1");
+			$(".black").each(function() { rotateIn($(this)) });
 			blkhead.addClass("highlight");
 		}
 	});

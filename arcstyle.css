@@ -79,133 +79,132 @@ td{
   background-color: #adadad;
 }
 
-.blue {
-  color: #aaaaaa;
-  background-color: #0B1675;
+.blue, .orange, .green, .red, .gold, .purple, .silver, .black {
   padding: 7px;
+  background-color: var(--bg-color);
 }
-.blue1{
-  color: #aaaaaa;
-  background-color: #1C3696;
-  border: 3px solid;
-  padding: 4px;
-}
-.blue2{
-  color: #aaaaaa;
-  background-color: #1F50A5;
-  border: 6px double;
-}
-.orange {
-  background-color: #DA6E21;
-  padding: 7px;
-}
-.orange1 {
-  background-color: #DA853A;
-  border: 3px solid;
-  padding: 4px;
-}
-.orange2 {
-  background-color: #E09834;
-  border: 6px double;
-}
-.green {
-  background-color: #016923;
-  padding: 7px;
-}
-.green1 {
-  background-color: #018D32;
-  border: 3px solid;
-  padding: 4px;
-}
-.green2 {
-  background-color: #009E3A;
-  border: 6px double;
-}
-.red {
-  color: #aaaaaa;
-  background-color: #6B0200;
-  padding: 7px;
-}
-.red1 {
-  color: #aaaaaa;
-  background-color: #911411;
-  border: 3px solid;
-  padding: 4px;
-}
-.red2 {
-  color: #aaaaaa;
-  background-color: #B03E43;
-  border: 6px double;
-}
-.gold {
-  background-color: #F9AE19;
-  padding: 7px;
-}
-.gold1 {
-  background-color: #FFC023;
-  border: 3px solid;
-  padding: 4px;
-}
-.gold2 {
-  background-color: #FFE261;
-  border: 6px double;
-}
-.purple {
-  color: #aaaaaa;
-  background-color: #540B75;
-  padding: 7px;
-}
-.purple1 {
-  color: #aaaaaa;
-  background-color: #5C2182;
-  border: 3px solid;
-  padding: 4px;
-}
-.purple2 {
-  color: #aaaaaa;
-  background-color: #782C91;
-  border: 6px double;
-}
-.silver{
-  background-color: #5E5B6E;
-  padding: 7px;
-}
-.silver1 {
-  background-color: #726E85;
-  border: 3px solid;
-  padding: 4px;
-}
-.silver2 {
-  background-color: #8D8BA1;
-  border: 6px double;
-  padding: 4px;
-}
-.black{
-  background-color: #201C35;
-  color: #aaaaaa;
-  padding: 7px;
-}
-.black1{
-  background-color: #26263B;
-  color: #aaaaaa;
-  border: 3px solid;
-  padding: 4px;
-}
-.black2{
-  background-color: #313143;
-  color: #aaaaaa;
-  border: 6px double;
-}
-
 
 .immortal {
-  border-color: #fffacd;
+  --highlight: #fffacd;
 }
 
-.frantic{
-  border-color: #aab7b7;
+.frantic {
+  --highlight: #aab7b7;
 }
 
 .sickly {
-  border-color: black;
+  --highlight: black;
+}
+
+.blue {
+  color: #aaaaaa;
+  --bg-color: #0B1675;
+}
+.blue.highlighted1 {
+  --bg-color: #1C3696;
+}
+.blue.highlighted2 {
+  --bg-color: #1F50A5;
+}
+
+.orange {
+  --bg-color: #DA6E21;
+}
+.orange.highlighted1 {
+  --bg-color: #DA853A;
+}
+.orange.highlighted2 {
+  --bg-color: #E09834;
+}
+
+.green {
+  --bg-color: #016923;
+}
+.green.highlighted1 {
+  --bg-color: #018D32;
+}
+.green.highlighted2 {
+  --bg-color: #009E3A;
+}
+
+.red {
+  color: #aaaaaa;
+  --bg-color: #6B0200;
+}
+.red.highlighted1 {
+  --bg-color: #911411;
+}
+.red.highlighted2 {
+  --bg-color: #B03E43;
+}
+
+.gold {
+  --bg-color: #F9AE19;
+}
+.gold.highlighted1 {
+  --bg-color: #FFC023;
+}
+.gold.highlighted2 {
+  --bg-color: #FFE261;
+}
+
+.purple {
+  color: #aaaaaa;
+  --bg-color: #540B75;
+}
+.purple.highlighted1 {
+  --bg-color: #5C2182;
+}
+.purple.highlighted2 {
+  --bg-color: #782C91;
+}
+
+.silver {
+  --bg-color: #5E5B6E;
+}
+.silver.highlighted1 {
+  --bg-color: #726E85;
+}
+.silver.highlighted2 {
+  --bg-color: #8D8BA1;
+}
+
+.black {
+  color: #aaaaaa;
+  --bg-color: #201C35;
+}
+.black.highlighted1 {
+  --bg-color: #26263B;
+}
+.black.highlighted2 {
+  --bg-color: #313143;
+}
+
+.highlighted1 {
+  border: 3px solid var(--highlight);
+  padding: 4px;
+}
+
+.highlighted2 {
+  border: 6px double var(--highlight);
+  padding: 0;
+}
+
+.highlighted3 {
+  box-shadow:
+    2px 2px var(--bg-color) inset,
+    -2px -2px var(--bg-color) inset,
+    -4px -4px var(--highlight) inset,
+    4px 4px var(--highlight) inset;
+}
+.highlighted4 {
+  box-shadow:
+    2px 2px var(--bg-color) inset,
+    -2px -2px var(--bg-color) inset,
+    -4px -4px var(--highlight) inset,
+    4px 4px var(--highlight) inset,
+    6px 6px var(--bg-color) inset,
+    -6px -6px var(--bg-color) inset,
+    -8px -8px var(--highlight) inset,
+    8px 8px var(--highlight) inset;
 }
