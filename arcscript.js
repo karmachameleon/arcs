@@ -47,11 +47,11 @@ $(document).ready(function(){
 	var noblePCbox = $("#nobilisPC");
 
 	var characters = $(".character");
-	var gmdPCnames = $(".character.gmdpc");
-	var gmdNPCnames = $(".character.gmdnpc");
-	var hzInames = $(".character.horI");
-	var hzIInames = $(".character.horII");
-	var miscnames = $(".character.misc");
+	var gmdPCnames = $(".gmdpcname");
+	var gmdNPCnames = $(".gmdnpcname");
+	var hzInames = $(".horIname");
+	var hzIInames = $(".horIIname");
+	var miscnames = $(".miscname");
 
 	var allexposition = $("p");
 	var menus = $("div#nobilismenu, div#excrucianmenu, div#campaignmenu, div#toolmenu");
