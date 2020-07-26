@@ -38,8 +38,8 @@ $(document).ready(function(){
 	var angelbox = $("#angel");
 	var devilbox = $("#devil");
 	var serpentbox = $("#serpent");
-	var lightbox = $("#light");
-	var darkbox = $("#dark");
+	var rulebox = $("#rule");
+	var gamebox = $("#game");
 	var wildbox = $("#wild");
 	var truebox = $("#true");
 	var actualbox = $("#actual");
@@ -352,36 +352,36 @@ $(document).ready(function(){
 			$("p.serpent").show();
 	  }
 	});
-	lightbox.on("click", function(){
-		if (lightbox.hasClass("pressed")) {
-		  $(".light").each(function() {
+	rulebox.on("click", function(){
+		if (rulebox.hasClass("pressed")) {
+		  $(".rule").each(function() {
 				rotateOut($(this));
 			});
-		  lightbox.removeClass("pressed");
-			$("p.light").hide();
+		  rulebox.removeClass("pressed");
+			$("p.rule").hide();
 	  }
 	  else {
-		  $(".light").each(function() {
+		  $(".rule").each(function() {
 				rotateIn($(this));
 			});
-		  lightbox.addClass("pressed");
-			$("p.light").show();
+		  rulebox.addClass("pressed");
+			$("p.rule").show();
 	  }
 	});
-	darkbox.on("click", function(){
-		if (darkbox.hasClass("pressed")) {
-		  $(".dark").each(function() {
+	gamebox.on("click", function(){
+		if (gamebox.hasClass("pressed")) {
+		  $(".game").each(function() {
 				rotateOut($(this));
 			});
-			$("p.dark").hide();
-		  darkbox.removeClass("pressed");
+			$("p.game").hide();
+		  gamebox.removeClass("pressed");
 	  }
 	  else {
-		  $(".dark").each(function() {
+		  $(".game").each(function() {
 				rotateIn($(this));
 			});
-		  darkbox.addClass("pressed");
-			$("p.dark").show();
+		  gamebox.addClass("pressed");
+			$("p.game").show();
 	  }
 	});
 	wildbox.on("click", function(){
