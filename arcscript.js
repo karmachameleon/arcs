@@ -112,7 +112,7 @@ $(document).ready(function(){
 	$("#glitchtoggle").on("click", function(){
 		$(".attrName").toggle();
 		$(".arcName").toggle();
-    $(this).text($(this).text() == 'Toggle Names: Arcs (CMWGE)' ? 'Toggle Names: Attributes (Glitch)' : 'Toggle Names: Arcs (CMWGE)');
+    $(this).html($(this).html() == 'Arc Names (CMWGE)<br>Click to show Glitch Attribute names' ? 'Attribute Names (Glitch)<br>Click to show CMWGE Arc names' : 'Arc Names (CMWGE)<br>Click to show Glitch Attribute names');
 	});
 
 	$("#intersect").on("click", function(){
