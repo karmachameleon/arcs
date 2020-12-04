@@ -72,6 +72,14 @@ th.highlight {
   padding: 10px;
 }
 
+#draftstatus{
+  padding: 5px 10px;
+}
+
+td .draft{
+  font-size: 0.8em;
+}
+
 .header {
   background-color: #696969;
   width: 25%;

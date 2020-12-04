@@ -61,6 +61,7 @@ $(document).ready(function(){
 	allexposition.hide();
 	menus.hide();
 	$(".attrName").hide();
+	$(".draft").hide();
 
 	clear.on("click", function(){
 		$(".highlight").removeClass("highlight");
@@ -114,6 +115,12 @@ $(document).ready(function(){
 		$(".arcName").toggle();
     $(this).html($(this).html() == 'Arc Names (CMWGE)<br>Click to show Glitch Attribute names' ? 'Attribute Names (Glitch)<br>Click to show CMWGE Arc names' : 'Arc Names (CMWGE)<br>Click to show Glitch Attribute names');
 	});
+
+	$("#draftstatus").on("click", function(){
+		$(".draft").toggle();
+    $(this).html($(this).html() == 'Show draft and name revision status' ? 'Hide draft and name revision status' : 'Show draft and name revision status');
+	});
+
 
 	$("#intersect").on("click", function(){
 		$(".highlighted2").find(".character:not(.gmdnpc)").show();

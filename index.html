@@ -1,14 +1,3 @@
-<!--
-<br>TO DO: <list>
-  <li>Write descriptions of colors, traits, maybe individual arcs??</li>
-  <li>Should you be able to just click an arc to highlight/unhighlight? It might be hard.</li>
-  <li>Ask around, make sure there aren't more blog-exclusive worked examples I'm missing.</li>
-  <li>More filtering options on the text because I'm already writing an awful lot.</li>
-  <li>Like, an on/off toggle for setting background information, or the fussy blog errata about where Prophet goes.</li>
-  <li>Twiddle with the colors to make absolutely sure everything's legible and looks okay together.</li>
-  <li>Reskin the buttons.</li>
-</list>
--->
 <!doctype html>
 <html>
   <head>
@@ -59,7 +48,8 @@
         <button id="fulldeselect">Hide characters outside selection</button>
       </div>
       <br><br>
-      <div id="glitchmenu">
+      <div id="erratamenu">
+          <button id="draftstatus">Show draft and name revision status</button><br>
           <button id="glitchtoggle">Arc Names (CMWGE)<br>Click to show Glitch Attribute names</button>
       </div>
       <br><br>
@@ -84,20 +74,20 @@
         </tr>
          <tr>
           <th class="blue header">Blue<br>Bindings</th>
-          <td class="immortal blue strategist angel horII misc"><a class="darkbg" target="_blank" href="http://jennamoran.tumblr.com/tagged/gatekeeper/chrono"><span class ="arcName">Gatekeeper</span><span class ="attrName">Lore</span></a>
+          <td class="immortal blue strategist angel horII misc"><a class="darkbg" target="_blank" href="http://jennamoran.tumblr.com/tagged/gatekeeper/chrono"><span class ="arcName">Gatekeeper</span><span class ="attrName">Lore</span></a><span class="draft"><br>Draft</span>
             <div class="character horIIname">
             <br><b>Edony Marguerite</b><br>The Magical Detective</div>
             <div class="character miscname">
             <br><b>Jade Irinka</b><br>Angel of the Houses of the Sun</div>
           </td>
-          <td class="frantic blue actual mimic horI horII"><a class="darkbg" target="_blank" href="http://jennamoran.tumblr.com/post/128953930248/specialist"><span class ="arcName">Gatecrasher</span><span class ="attrName">Style</span></a>
+          <td class="frantic blue actual mimic horI horII"><a class="darkbg" target="_blank" href="http://jennamoran.tumblr.com/post/128953930248/specialist"><span class ="arcName">Gatecrasher</span><span class ="attrName">Style</span></a><span class="draft"><br>Draft, formerly Sickly Aspect: Specialist</span>
             <div class="character horIname">
             <br><b>Suzy Schwan</b><br>The Best Friend</div>
             <div class="character horIIname">
             <br><b>Laodemus Schwan</b><br>The Wish-Granting Engine</div>
           </td>
 
-          <td class="sickly blue mimic devil gmdpc gmdnpc"><a class="darkbg" target="_blank" href="http://jennamoran.tumblr.com/tagged/wounded-angel/chrono"><span class ="arcName">Wounded Angel</span><span class ="attrName">Wounded</span></a>
+          <td class="sickly blue mimic devil gmdpc gmdnpc"><a class="darkbg" target="_blank" href="http://jennamoran.tumblr.com/tagged/wounded-angel/chrono"><span class ="arcName">Wounded Angel</span><span class ="attrName">Wounded</span></a><span class="draft"><br>Published in CMWGE core</span>
             <div class="character gmdpcname">
             <br><b>Leonardo de Montreal</b><br>Nightmares' Angel</div>
             <div class="character gmdnpcname">
@@ -114,7 +104,7 @@
         </tr>
          <tr>
           <th class="orange header">Orange<br>Knight</th>
-          <td class="immortal orange warmain devil wild serpent horII misc"><a class="lightbg" target="_blank" href="http://jennamoran.tumblr.com/post/111335917433/allegory-complete"><span class ="arcName">Allegory</span><span class ="attrName">Allegorical</span></a>
+          <td class="immortal orange warmain devil wild serpent horII misc"><a class="lightbg" target="_blank" href="http://jennamoran.tumblr.com/post/111335917433/allegory-complete"><span class ="arcName">Allegory</span><span class ="attrName">Allegorical</span></a><span class="draft"><br>Draft</span>
             <div class="character horIIname">
             <br><b>Sal Caesar</b><br>The Wriggling Teacher</div>
             <div class="character horIIname">
@@ -122,7 +112,7 @@
             <div class="character miscname">
             <br><b>Leonardo de Montreal</b><br>Angel of Recovery</div>
           </td>
-          <td class="frantic orange actual gmdnpc gmdpc"><a class="lightbg" target="_blank" href="http://jennamoran.tumblr.com/tagged/become-somebody/chrono"><span class ="arcName">Become Somebody</span><span class ="attrName">Visage</span></a>
+          <td class="frantic orange actual gmdnpc gmdpc"><a class="lightbg" target="_blank" href="http://jennamoran.tumblr.com/tagged/become-somebody/chrono"><span class ="arcName">Become Somebody</span><span class ="attrName">Visage</span></a><span class="draft"><br>Published in CMWGE core</span>
             <div class="character gmdpcname">
             <br><b>Seizhi Schwan</b><br>The Best Friend</div>
             <div class="character gmdnpcname">
@@ -132,7 +122,7 @@
             <div class="character gmdnpcname">
             <br><b>Nikolai Zakharov</b></div>
           </td>
-          <td class="sickly orange deceiver attr wild zu horI horII"><a class="lightbg" target="_blank" href="http://jennamoran.tumblr.com/tagged/knave-of-hearts/chrono"><span class ="arcName">Star Quality</span><span class ="attrName">Persona</span></a>
+          <td class="sickly orange deceiver attr wild zu horI horII"><a class="lightbg" target="_blank" href="http://jennamoran.tumblr.com/tagged/knave-of-hearts/chrono"><span class ="arcName">Star Quality</span><span class ="attrName">Persona</span></a><span class="draft"><br>Draft, formerly Frantic Mystic: Knave of Hearts</span>
             <div class="character horIname">
             <br><b>Jasmine Apocynum</b><br>The Ideologue</div>
             <div class="character horIIname">
@@ -142,7 +132,7 @@
 
          <tr>
           <th class="green header">Green<br>Otherworldly</th>
-          <td class="immortal green serpent true gmdpc gmdnpc"><a class="lightbg" target="_blank" href="http://jennamoran.tumblr.com/tagged/child-of-the-ash/chrono"><span class ="arcName">Child of the Ash</span><span class ="attrName">Vastness</span></a>
+          <td class="immortal green serpent true gmdpc gmdnpc"><a class="lightbg" target="_blank" href="http://jennamoran.tumblr.com/tagged/child-of-the-ash/chrono"><span class ="arcName">Child of the Ash</span><span class ="attrName">Vastness</span></a><span class="draft"><br>Published in CMWGE core</span>
             <div class="character gmdpcname">
             <br><b>Chuubo</b><br>The Wishing Boy</div>
             <div class="character gmdpcname">
@@ -161,7 +151,7 @@
             <br><b>Unicorn</b><br>named Numinous</div>
           </td>
 
-          <td class="frantic green attr gmdpc gmdnpc"><a class="lightbg" target="_blank" href="http://jennamoran.tumblr.com/post/167812668103/spiritual-redux"><span class ="arcName">Spiritual</span><span class ="attrName">Domain</span></a>
+          <td class="frantic green attr gmdpc gmdnpc"><a class="lightbg" target="_blank" href="http://jennamoran.tumblr.com/post/167812668103/spiritual-redux"><span class ="arcName">Spiritual</span><span class ="attrName">Domain</span></a><span class="draft"><br>Published in CMWGE core</span>
             <div class="character gmdpcname">
             <br><b>Rinley Yatskaya</b><br>The Troublemaker</div>
             <div class="character gmdnpcname">
@@ -172,7 +162,7 @@
             <br><b>The Exultant</b></div>
           </td>
 
-          <td class="sickly green serpent true game horI horII"><a class="lightbg" target="_blank" href="http://jennamoran.tumblr.com/post/107017590708/called-away-draft-as-a-single-post"><span class ="arcName">Called Away</span><span class ="attrName">Wanderer</span></a>
+          <td class="sickly green serpent true game horI horII"><a class="lightbg" target="_blank" href="http://jennamoran.tumblr.com/post/107017590708/called-away-draft-as-a-single-post"><span class ="arcName">Called Away</span><span class ="attrName">Wanderer</span></a><span class="draft"><br>Draft</span>
             <div class="character horIname">
             <br><b>Jasper Irinka</b><br>The Child of the Sun</div>
             <div class="character horIIname">
@@ -182,7 +172,7 @@
 
         <tr>
           <th class="red header">Red<br>Storyteller</th>
-          <td class="immortal red angel rule devil zu gmdpc horII gmdnpc"><a class="darkbg" target="_blank" href="http://jennamoran.tumblr.com/tagged/creature-of-the-light/chrono"><span class ="arcName">Creature of the Light</span><span class ="attrName">Holy</span></a>
+          <td class="immortal red angel rule devil zu gmdpc horII gmdnpc"><a class="darkbg" target="_blank" href="http://jennamoran.tumblr.com/tagged/creature-of-the-light/chrono"><span class ="arcName">Creature of the Light</span><span class ="attrName">Holy</span></a><span class="draft"><br>Published in CMWGE core</span>
             <div class="character gmdpcname">
             <br><b>Entropy II</b><br>The Angel of Fortitude</div>
             <div class="character horIIname">
@@ -197,7 +187,7 @@
             <br><b>Unicorn</b><br>named Numinous</div>
           </td>
 
-          <td class="frantic red warmain game gmdpc horI horII gmdnpc"><a class="darkbg" target="_blank" href="http://jennamoran.tumblr.com/tagged/creature-of-fable/chrono"><span class ="arcName">Creature of Fable</span><span class ="attrName">Hunter</span></a>
+          <td class="frantic red warmain game gmdpc horI horII gmdnpc"><a class="darkbg" target="_blank" href="http://jennamoran.tumblr.com/tagged/creature-of-fable/chrono"><span class ="arcName">Creature of Fable</span><span class ="attrName">Hunter</span></a><span class="draft"><br>Published in CMWGE core</span>
             <div class="character gmdpcname">
             <br><b>Rinley Yatskaya</b><br>The Troublemaker</div>
             <div class="character horIname">
@@ -216,26 +206,26 @@
             <br><b>The Graveyard Spirit</b><br>aka The Grief-Yard<br>aka Simon Aluskiy</div>
           </td>
 
-          <td class="sickly red mimic deceiver misc"><a class="darkbg" target="_blank" href="http://jennamoran.tumblr.com/post/119713516038/alchemist-complete-draft"><span class ="arcName">Creature of Delirium</span><span class ="attrName">Theft</span></a>
+          <td class="sickly red mimic deceiver misc"><a class="darkbg" target="_blank" href="http://jennamoran.tumblr.com/post/119713516038/alchemist-complete-draft"><span class ="arcName">Creature of Delirium</span><span class ="attrName">Theft</span></a><span class="draft"><br>Draft, formerly Frantic Emptiness: Alchemist</span>
             <div class="character miscname">
             <br><b>Jasmine Apocynum</b><br>The Ideologue</div>
           </td>
         </tr>
         <tr>
           <th class="gold header">Yellow<br>Aspect</th>
-            <td class="immortal gold angel zu misc"><a class="lightbg" target="_blank" href="http://jennamoran.tumblr.com/tagged/magical-hero/chrono"><span class ="arcName">Chosen One</span><span class ="attrName">Adept</span></a>
+            <td class="immortal gold angel zu misc"><a class="lightbg" target="_blank" href="http://jennamoran.tumblr.com/tagged/magical-hero/chrono"><span class ="arcName">Chosen One</span><span class ="attrName">Adept</span></a><span class="draft"><br>Draft, formerly Magical Hero</span>
             <div class="character miscname">
             <br><b>Jade Irinka</b><br>Angel of the Houses of the Sun</div>
           </td>
 
-          <td class="frantic gold zu attr gmdpc gmdnpc"><a class="lightbg" target="_blank" href="http://jennamoran.tumblr.com/tagged/the-ace/chrono"><span class ="arcName">The Ace</span><span class ="attrName">Aspect</span></a>
+          <td class="frantic gold zu attr gmdpc gmdnpc"><a class="lightbg" target="_blank" href="http://jennamoran.tumblr.com/tagged/the-ace/chrono"><span class ="arcName">The Ace</span><span class ="attrName">Aspect</span></a><span class="draft"><br>Published in CMWGE core</span>
             <div class="character gmdpcname">
             <br><b>Natalia Koutolika</b><br>The Prodigy</div>
             <div class="character gmdnpcname">
             <br><b>Melanie Malakh</b></div>
           </td>
 
-          <td class="sickly gold deceiver devil serpent gmdpc gmdnpc horI horII"><a class="lightbg" target="_blank" href="http://jennamoran.tumblr.com/tagged/reality-syndrome/chrono"><span class ="arcName">Reality Syndrome</span><span class ="attrName">Sealed</span></a>
+          <td class="sickly gold deceiver devil serpent gmdpc gmdnpc horI horII"><a class="lightbg" target="_blank" href="http://jennamoran.tumblr.com/tagged/reality-syndrome/chrono"><span class ="arcName">Reality Syndrome</span><span class ="attrName">Sealed</span></a><span class="draft"><br>Published in CMWGE core, formerly Sickly Knight</span>
             <div class="character horIname gmdpcname">
             <br><b>Chuubo</b><br>The Wishing Boy</div>
             <div class="character gmdnpcname">
@@ -255,7 +245,7 @@
         <tr>
           <th class="purple header">Purple<br>Shepherd</th>
 
-          <td class="immortal purple angel rule gmdpc gmdnpc"><a class="darkbg" target="_blank" href="http://jennamoran.tumblr.com/tagged/a-keeper-of-gardens/chrono"><span class ="arcName">A Keeper of Gardens</span><span class ="attrName">Gardener</span></a>
+          <td class="immortal purple angel rule gmdpc gmdnpc"><a class="darkbg" target="_blank" href="http://jennamoran.tumblr.com/tagged/a-keeper-of-gardens/chrono"><span class ="arcName">A Keeper of Gardens</span><span class ="attrName">Gardener</span></a><span class="draft"><br>Published in CMWGE core</span>
             <div class="character gmdpcname">
             <br><b>Entropy II</b><br>The Angel of Fortitude</div>
             <div class="character gmdnpcname">
@@ -272,7 +262,7 @@
             <br><b>Ugallu</b></div>
           </td>
 
-          <td class="frantic purple strategist attr gmdpc horII gmdnpc"><a class="darkbg" target="_blank" href="http://jennamoran.tumblr.com/tagged/sentimental/chrono"><span class ="arcName">Sentimental</span><span class ="attrName">Flore</span></a>
+          <td class="frantic purple strategist attr gmdpc horII gmdnpc"><a class="darkbg" target="_blank" href="http://jennamoran.tumblr.com/tagged/sentimental/chrono"><span class ="arcName">Sentimental</span><span class ="attrName">Flore</span></a><span class="draft"><br>Published in CMWGE core</span>
             <div class="character gmdpcname">
             <br><b>Miramie Mesmer</b><br>The Dream-Witch</div>
             <div class="character horIIname">
@@ -283,7 +273,7 @@
             <br><b>Melanie Malakh</b></div>
           </td>
 
-          <td class="sickly purple actual warmain rule horI horII"><a class="darkbg" target="_blank" href="http://jennamoran.tumblr.com/tagged/sickly-storyteller/chrono"><span class ="arcName">Impresario</span><span class ="attrName">Architect</span></a>
+          <td class="sickly purple actual warmain rule horI horII"><a class="darkbg" target="_blank" href="http://jennamoran.tumblr.com/tagged/sickly-storyteller/chrono"><span class ="arcName">Impresario</span><span class ="attrName">Architect</span></a><span class="draft"><br>Draft, formerly Sickly Storyteller: Self-Made</span>
             <div class="character horIname">
             <br><b>Soun Shounen</b><br>The Idol</div>
             <div class="character horIIname">
@@ -292,17 +282,17 @@
         </tr>
         <tr>
           <th class="silver header">Silver<br>Emptiness</th>
-          <td class="immortal silver warmain game wild horII"><a class="lightbg" target="_blank" href="http://jennamoran.tumblr.com/tagged/indomitable/chrono"><span class ="arcName">Indomitable</span><span class ="attrName">Monstrous</span></a>
+          <td class="immortal silver warmain game wild horII"><a class="lightbg" target="_blank" href="http://jennamoran.tumblr.com/tagged/indomitable/chrono"><span class ="arcName">Indomitable</span><span class ="attrName">Monstrous</span></a><span class="draft"><br>Draft</span>
             <div class="character horIIname">
             <br><b>Zoë Rosewood</b><br>Ogre-Sensei</div>
             <div class="character horIIname">
             <br><b>Mrs. Senko</b><br>The Practical Teacher</div>
           </td>
 
-          <td class="frantic silver mimic strategist mimic"><a class="lightbg" target="_blank" href="http://jennamoran.tumblr.com/tagged/renegade/chrono"><span class ="arcName">Troubled</span><span class ="attrName">Eide</span></a>
+          <td class="frantic silver mimic strategist mimic"><a class="lightbg" target="_blank" href="http://jennamoran.tumblr.com/tagged/renegade/chrono"><span class ="arcName">Troubled</span><span class ="attrName">Eide</span></a><span class="draft"><br>Draft, formerly Frantic Bindings: Renegade</span>
             </td>
 
-          <td class="sickly silver strategist gmdpc horI gmdnpc"><a class="lightbg" target="_blank" href="http://jennamoran.tumblr.com/tagged/sickly-silver/chrono"><span class ="arcName">Accursed</span><span class ="attrName">Wyrd</span></a>
+          <td class="sickly silver strategist gmdpc horI gmdnpc"><a class="lightbg" target="_blank" href="http://jennamoran.tumblr.com/tagged/sickly-silver/chrono"><span class ="arcName">Accursed</span><span class ="attrName">Wyrd</span></a><span class="draft"><br>Published in CMWGE core</span>
             <div class="character gmdpcname">
             <br><b>Miramie Mesmer</b><br>The Dream-Witch</div>
             <div class="character horIname">
@@ -326,7 +316,7 @@
         <tr>
           <th class="black header">Black<br>Mystic</th>
 
-          <td class="immortal black wild true gmdpc horII gmdnpc"><a class="darkbg" target="_blank" href="http://jennamoran.tumblr.com/tagged/primordial/chrono"><span class ="arcName">Primordial</span><span class ="attrName">Symbolic</span></a>
+          <td class="immortal black wild true gmdpc horII gmdnpc"><a class="darkbg" target="_blank" href="http://jennamoran.tumblr.com/tagged/primordial/chrono"><span class ="arcName">Primordial</span><span class ="attrName">Symbolic</span></a><span class="draft"><br>Published in CMWGE core</span>
             <div class="character gmdpcname">
             <br><b>Jasper Irinka</b><br>The Child of the Sun</div>
             <div class="character horIIname">
@@ -345,11 +335,11 @@
             <br><b>Many-Voiced Minions</b></div>
           </td>
 
-          <td class="frantic black game horI"><a class="darkbg" target="_blank" href="http://jennamoran.tumblr.com/tagged/prophet/chrono">Prophet</a>
+          <td class="frantic black game horI"><a class="darkbg" target="_blank" href="http://jennamoran.tumblr.com/tagged/prophet/chrono">Prophet</a><span class="draft"><br>Draft</span>
             <div class="character horIname">
             <br><b>Dulcinea de Montreal</b><br>The Rival</div>
           </td>
-          <td class="sickly black deceiver rule true actual horII"><a class="darkbg" target="_blank" href="http://jennamoran.tumblr.com/tagged/awakening/chrono"><span class ="arcName">Awakening</span><span class ="attrName">Deepness</span></a>
+          <td class="sickly black deceiver rule true actual horII"><a class="darkbg" target="_blank" href="http://jennamoran.tumblr.com/tagged/awakening/chrono"><span class ="arcName">Awakening</span><span class ="attrName">Deepness</span></a><span class="draft"><br>Draft</span>
             <div class="character horIIname">
             <br><b>Entropy II</b><br>The Principal</div>
           </td>
@@ -358,6 +348,7 @@
     </div>
 
     <div id="flavortext">
+      <p class="draft"> 12 arcs were included with the core rulebook of the game. The remaining twelve are in progress, with plans for release in the upcoming Book of Golden Hours; drafts are available on Dr. Moran's blog. Some arcs were reshuffled to new positions during development. All links lead to the most up-to-date publicly available versions of that arc, which in some cases means a version which predates the color shift and shows an out-of-date name. Abilities, balance, and flavor may still change between draft and release.</p>
       <p class="nobilis exposition">Jenna Moran's previous work, Nobilis, describes the various categories of Imperators, gods with total dominion over the many aspects of reality. Each Nobilis faction is associated with a set of four Arcs.</p>
       <p class="angel exposition">Angels work tirelessly to spread grace, enlightenment, and beauty. The touch of Heaven is transformative, self-replicating, invasive, and difficult to bear. It can be salvation, it can elevate mortals to saints, but it can also be cold, inhuman justice. During the High War, angels were forced to fight hardest, as the favored Excrucian targets.</p>
       <p class="angel whoswho">No living characters are officially classified as angels. Jade Irinka was; she's dead.</p>
