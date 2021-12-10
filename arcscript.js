@@ -254,121 +254,79 @@ $(document).ready(function(){
 
 		if (currentselection.hasClass("angel")){
 			$("div#nobilismenu").show();
-			$(".angel").each(function() {
-				rotateIn($(this));
-			});
 			angelbox.addClass("pressed");
 			$("p.angel").show();
 		}
 		if (currentselection.hasClass("devil")){
 			$("div#nobilismenu").show();
-			$(".devil").each(function() {
-				rotateIn($(this));
-			});
 			devilbox.addClass("pressed");
 			$("p.devil").show();
 		}
 		if (currentselection.hasClass("serpent")){
 			$("div#nobilismenu").show();
-			$(".serpent").each(function() {
-				rotateIn($(this));
-			});
 			serpentbox.addClass("pressed");
 			$("p.serpent").show();
 		}
 		if (currentselection.hasClass("rule")){
 			$("div#nobilismenu").show();
-			$(".rule").each(function() {
-				rotateIn($(this));
-			});
 			rulebox.addClass("pressed");
 			$("p.rule").show();
 		}
 		if (currentselection.hasClass("game")){
 			$("div#nobilismenu").show();
-			$(".game").each(function() {
-				rotateIn($(this));
-			});
 			gamebox.addClass("pressed");
 			$("p.game").show();
 		}
 		if (currentselection.hasClass("wild")){
 			$("div#nobilismenu").show();
-			$(".wild").each(function() {
-				rotateIn($(this));
-			});
 			wildbox.addClass("pressed");
 			$("p.wild").show();
 		}
 		if (currentselection.hasClass("true")){
 			$("div#nobilismenu").show();
-			$(".true").each(function() {
-				rotateIn($(this));
-			});
 			truebox.addClass("pressed");
 			$("p.true").show();
 		}
 		if (currentselection.hasClass("attr")){
 			$("div#nobilismenu").show();
-			$(".attr").each(function() {
-				rotateIn($(this));
-			});
 			noblePCbox.addClass("pressed");
 			$("p.noblePC").show();
 		}
 		if (currentselection.hasClass("actual")){
 			$("div#nobilismenu").show();
-			$(".actual").each(function() {
-				rotateIn($(this));
-			});
 			actualbox.addClass("pressed");
 			$("p.actual").show();
 		}
 		if (currentselection.hasClass("zu")){
 			$("div#nobilismenu").show();
-			$(".zu").each(function() {
-				rotateIn($(this));
-			});
 			zubox.addClass("pressed");
 			$("p.zu").show();
 		}
 
 		if (currentselection.hasClass("warmain")){
 			$("div#excrucianmenu").show();
-			$(".warmain").each(function() {
-				rotateIn($(this));
-			});
 			warbox.addClass("pressed");
 			$("p.warmain").show();
 		}
 		if (currentselection.hasClass("deceiver")){
 			$("div#excrucianmenu").show();
-			$(".deceiver").each(function() {
-				rotateIn($(this));
-			});
 			deceitbox.addClass("pressed");
 			$("p.deceiver").show();
 		}
 		if (currentselection.hasClass("strategist")){
 			$("div#excrucianmenu").show();
-			$(".strategist").each(function() {
-				rotateIn($(this));
-			});
 			stratbox.addClass("pressed");
 			$("p.strategist").show();
 		}
 		if (currentselection.hasClass("mimic")){
 			$("div#excrucianmenu").show();
-			$(".mimic").each(function() {
-				rotateIn($(this));
-			});
 			mimbox.addClass("pressed");
 			$("p.mimic").show();
 		}
 	});
 
-	$("#factionintersect").on("click", function(){
-		let currentselection = $(".highlighted2");
+	$("#factionfull").on("click", function(){
+		let currentselection = $(".highlighted1");
 
 		if (currentselection.hasClass("angel")){
 			$("div#nobilismenu").show();
