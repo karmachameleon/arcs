@@ -97,12 +97,118 @@ $(document).ready(function(){
 		highlighted >= 4 && e.addClass('highlighted4');
 	}
 
+	function hideNobleFactions(){
+		if (angelbox.hasClass("pressed")){
+			$(".angel").each(function() {
+				rotateOut($(this));
+			});
+			angelbox.removeClass("pressed");
+			$("p.angel").hide();
+		}
+		if (devilbox.hasClass("pressed")){
+			$(".devil").each(function() {
+				rotateOut($(this));
+			});
+			devilbox.removeClass("pressed");
+			$("p.devil").hide();
+		}
+		if (serpentbox.hasClass("pressed")){
+			$(".serpent").each(function() {
+				rotateOut($(this));
+			});
+			serpentbox.removeClass("pressed");
+			$("p.serpent").hide();
+		}
+		if (rulebox.hasClass("pressed")){
+			$(".rule").each(function() {
+				rotateOut($(this));
+			});
+			rulebox.removeClass("pressed");
+			$("p.rule").hide();
+		}
+		if (gamebox.hasClass("pressed")){
+			$(".game").each(function() {
+				rotateOut($(this));
+			});
+			gamebox.removeClass("pressed");
+			$("p.game").hide();
+		}
+		if (wildbox.hasClass("pressed")){
+			$(".wild").each(function() {
+				rotateOut($(this));
+			});
+			wildbox.removeClass("pressed");
+			$("p.wild").hide();
+		}
+		if (truebox.hasClass("pressed")){
+			$(".true").each(function() {
+				rotateOut($(this));
+			});
+			truebox.removeClass("pressed");
+			$("p.true").hide();
+		}
+		if (noblePCbox.hasClass("pressed")){
+			$(".attr").each(function() {
+				rotateOut($(this));
+			});
+			noblePCbox.removeClass("pressed");
+			$("p.noblePC").hide();
+		}
+		if (actualbox.hasClass("pressed")){
+			$(".actual").each(function() {
+				rotateOut($(this));
+			});
+			actualbox.removeClass("pressed");
+			$("p.actual").hide();
+		}
+		if (zubox.hasClass("pressed")){
+			$(".zu").each(function() {
+				rotateOut($(this));
+			});
+			zubox.removeClass("pressed");
+			$("p.zu").hide();
+		}
+	}
+
+	function hideExcrucianFactions(){
+		if (warbox.hasClass("pressed")){
+			$(".warmain").each(function() {
+				rotateOut($(this));
+			});
+			warbox.removeClass("pressed");
+			$("p.warmain").hide();
+		}
+		if (deceitbox.hasClass("pressed")){
+			$(".deceiver").each(function() {
+				rotateOut($(this));
+			});
+			deceitbox.removeClass("pressed");
+			$("p.deceiver").hide();
+		}
+		if (stratbox.hasClass("pressed")){
+			$(".strategist").each(function() {
+				rotateOut($(this));
+			});
+			stratbox.removeClass("pressed");
+			$("p.strategist").hide();
+		}
+		if (mimbox.hasClass("pressed")){
+			$(".mimic").each(function() {
+				rotateOut($(this));
+			});
+			mimbox.removeClass("pressed");
+			$("p.mimic").hide();
+		}
+	}
+
 	$(".nob").on("click", function(){
 		$("div#nobilismenu").toggle();
+		hideNobleFactions();
 	});
 
 	$(".exc").on("click", function(){
 		$("div#excrucianmenu").toggle();
+		hideExcrucianFactions();
 	});
 
 	$(".cam").on("click", function(){
